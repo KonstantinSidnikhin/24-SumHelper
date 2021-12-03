@@ -9,7 +9,7 @@ class SumHelper
     public function getSum3($arr){
         return $this->getSum($arr,3);
     }
-    public function getSum($arr,$pow){
+    private function getSum($arr,$pow){
         $sum=0;
         foreach($arr as $elem){
             $sum+=pow($elem,$pow);
